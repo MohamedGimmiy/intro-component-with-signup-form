@@ -1,0 +1,87 @@
+*{
+    border-style: none;
+}
+body{
+    background-color: hsl(0, 100%, 74%) ;
+    color: white;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/bg-intro-desktop.png);
+    background-size: cover;
+}
+
+.container{
+
+    
+}
+
+form{
+    background-color: white;
+    padding: 30px 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+button{
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border-bottom: 5px rgba(0, 0, 0, .2) solid;
+    font-weight: 600;
+}
+button>span{
+    font-weight: lighter;
+    color: hsl(246, 25%, 77%);
+}
+
+.bt1{
+    background-color: hsl(248, 32%, 49%);
+    border-bottom: 5px rgba(0, 0, 0, .2) solid;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, .86);
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.bt2{
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .9);
+}
+
+small{
+    font-weight: 500;
+    color: rgba(0, 0, 0, .3);
+
+}
+small span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+@media screen and (max-width:700px) {
+
+    body{
+        background-image: url(../images/bg-intro-mobile.png);
+        background-size: cover;
+    }
+    h1{
+        margin-top: 50px;
+    }
+    form{
+        margin-bottom: 50px;
+    }
+    button>span{
+        display: block;
+    }
+}
